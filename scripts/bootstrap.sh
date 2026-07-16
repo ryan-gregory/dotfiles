@@ -23,6 +23,10 @@ done
 echo "==> Setting up Rust toolchain..."
 rustup default stable 2>/dev/null || true
 
+echo "==> Installing dotnet global tools..."
+dotnet tool install --global EasyDotnet 2>/dev/null || true
+dotnet tool install --global dotnet-ef 2>/dev/null || true
+
 echo "==> Installing pi..."
 if ! command -v pi &>/dev/null; then
   yarn global add @earendil-works/pi-coding-agent

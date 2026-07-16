@@ -17,6 +17,9 @@ export EDITOR='nvim'
 # Cargo
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 
+# .NET global tools
+export PATH="$HOME/.dotnet/tools:$PATH"
+
 # Direnv
 eval "$(direnv hook zsh)"
 

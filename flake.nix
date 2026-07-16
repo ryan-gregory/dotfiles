@@ -62,6 +62,9 @@
             wget
             htop
             tree
+            luarocks
+            tree-sitter
+            clang
 
             # Dev tools
             lazygit
